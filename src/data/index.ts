@@ -19,9 +19,8 @@ export const shows = [
 
 export const stats = [
   { value: "+800", label: "Shows realizados" },
-  { value: "+12", label: "Anos de carreira" },
-  { value: "+20k", label: "Seguidores" },
-  { value: "1", label: "Curitiba Comedy Club Champion" },
+  { value: "+14", label: "Anos de carreira" },
+  { value: "+50k", label: "Seguidores nas redes" },
 ];
 
 export const famousWith = [
@@ -30,15 +29,16 @@ export const famousWith = [
   "Maurício Meirelles",
   "Léo Lins",
   "Murilo Couto",
+  "Raphael Ghanem",
 ];
 
 export const videos = [
   {
-    id: "vgFCJx8LSqg",
+    id: "xeaXyHEsaHs",
     title: "Humor Negro Sem Filtro",
   },
   {
-    id: "p5K289CVZrg",
+    id: "a0taTvpUHaA",
     title: "Eu Pareço o Mr Bean",
   },
 ];

@@ -9,19 +9,8 @@ export default function About() {
           <span className="text-red-600 text-xs font-bold uppercase tracking-widest">
             Quem é
           </span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white leading-tight">
-            Curitibano. Sem filtro.{" "}
-            <span className="text-red-600">Desde 2012.</span>
-          </h2>
           <p className="mt-6 text-white/60 leading-relaxed">
-            Mateus Caniceiro subiu ao palco pela primeira vez em setembro de 2012 e nunca mais
-            desceu. Vencedor da Copa de Novos Comediantes do Curitiba Comedy Club em 2013, acumulou
-            mais de 800 shows em bares, teatros e eventos corporativos — sempre com humor ácido,
-            histórias reais e absolutamente zero filtro.
-          </p>
-          <p className="mt-4 text-white/60 leading-relaxed">
-            Do palco do Curitiba Comedy Club à abertura de shows de Danilo Gentili e Whindersson Nunes,
-            Mateus construiu uma carreira de mais de 12 anos fazendo Curitiba rir.
+            Mateus Caniceiro escreve piadas desde criança e subiu ao palco pela primeira vez em setembro de 2012. Vencedor da Copa de Novos Comediantes do Curitiba Comedy Club em 2013, já fez mais de 800 shows entre bares, teatros e eventos corporativos — sempre misturando histórias reais com piadas ácidas e humor provocativo.
           </p>
         </div>
 

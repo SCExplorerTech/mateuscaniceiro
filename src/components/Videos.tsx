@@ -5,14 +5,11 @@ export default function Videos() {
     <section id="videos" className="bg-black py-24">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-red-600 text-xs font-bold uppercase tracking-widest">
+          <span className="text-red-600 text-2xl font-black uppercase tracking-widest">
             Conteúdo
           </span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">
-            Assista e Julgue
-          </h2>
           <p className="mt-4 text-white/50 max-w-md mx-auto">
-            Spoiler: você vai rir.
+            Apresentações nas principais casas de comédia do Brasil.
           </p>
         </div>
 

@@ -11,8 +11,7 @@ export default function CorporateCTA() {
             evento corporativo?
           </h2>
           <p className="mt-3 text-red-100/80 max-w-md">
-            Confraternizações, lançamentos, convenções de vendas — humor que conecta equipes e
-            garante que todo mundo lembre do evento.
+            Stand Up na sua confraternização ou evento corporativo. Entre em contato para mais informações.
           </p>
         </div>
 

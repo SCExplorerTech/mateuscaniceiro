@@ -12,8 +12,7 @@ export default function Contact() {
           <span className="text-red-600">evento?</span>
         </h2>
         <p className="mt-6 text-white/50 leading-relaxed max-w-xl mx-auto">
-          Shows corporativos, festas, eventos privados e muito mais. Entre em contato e garanta
-          uma noite que ninguém vai esquecer — pelo menos não por falta de tentativa.
+          Shows corporativos, em bares e teatros. Entre em contato e torne seu evento único!
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,7 +35,7 @@ export default function Contact() {
         </div>
 
         <p className="mt-8 text-white/25 text-xs">
-          Resposta em até 24h — exceto depois de show. Aí pode demorar mais.
+          Resposta em até 24h — exceto em dia de show, aí demora só um pouquinho mais.
         </p>
       </div>
     </section>

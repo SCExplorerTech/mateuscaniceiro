@@ -11,24 +11,39 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mateus Caniceiro — Stand Up Comedy em Curitiba",
+  title: "Mateus Caniceiro — Comediante em Curitiba | Stand Up Corporativo",
   description:
-    "Mateus Caniceiro: stand-up comedy em Curitiba com humor ácido, histórias reais e zero filtro. +800 shows, +12 anos de carreira. Contrate para eventos corporativos.",
+    "Mateus Caniceiro: comediante curitibano com +800 shows em bares, teatros e eventos corporativos. Stand up para empresa, show corporativo, humorista para evento em Curitiba e em todo o Brasil.",
   keywords: [
     "Mateus Caniceiro",
-    "stand up comedy Curitiba",
     "comediante Curitiba",
-    "stand up Curitiba",
+    "comediante curitibano",
+    "comediante em Curitiba",
+    "humorista em Curitiba",
+    "humorista curitibano",
+    "humorista de Curitiba",
+    "comediante de Curitiba",
+    "stand up comedy Curitiba",
+    "stand up corporativo",
+    "stand up para empresa",
+    "stand up para empresas",
+    "show corporativo",
+    "comédia corporativo",
+    "show de comédia em evento",
+    "show de comédia em empresa",
+    "show de comédia para evento",
+    "show de comédia para empresa",
+    "show de comédia para equipe",
     "show de humor Curitiba",
-    "evento corporativo humorista",
+    "humorista para evento corporativo",
     "Ato Falho",
   ],
   authors: [{ name: "Mateus Caniceiro" }],
   robots: { index: true, follow: true },
   alternates: { canonical: "https://mateuscaniceiro.com.br" },
   openGraph: {
-    title: "Mateus Caniceiro — Stand Up Comedy em Curitiba",
-    description: "Humor ácido. Histórias reais. Zero filtro. +800 shows em +12 anos de carreira.",
+    title: "Mateus Caniceiro — Comediante em Curitiba | Stand Up Corporativo",
+    description: "Stand Up em Evento Corporativo, Bares e Teatros. +800 shows em +14 anos de carreira. Contrate o comediante curitibano Mateus Caniceiro.",
     url: "https://mateuscaniceiro.com.br",
     siteName: "Mateus Caniceiro",
     locale: "pt_BR",
@@ -36,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mateus Caniceiro — Stand Up Comedy em Curitiba",
-    description: "Humor ácido. Histórias reais. Zero filtro.",
+    title: "Mateus Caniceiro — Comediante em Curitiba | Stand Up Corporativo",
+    description: "Stand Up em Evento Corporativo, Bares e Teatros. Comediante curitibano com +800 shows.",
   },
 };
 
