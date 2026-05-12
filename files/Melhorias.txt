@@ -1,0 +1,53 @@
+Incluir um botão de contato, que leve pro whatsapp, na tela inicial ao lado dos 2 botes que ja existem ali. 
+
+Tente alterar o fundo da imagem principal de vinho para off white. 
+
+Trocar “humor acido, historias reais. zero filtro.” por “Show de Stand Up em Evento Corporativo, Bares e Teatros.”
+
+Trocar “... e muito mais” por “e vários dos principais nomes da comédia no Brasil.”
+
+Trocar “+12” por “+14” 
+
+Trocar “+20k” por “+50k”
+
+Trocar “seguidores” por “seguidores nas redes”
+
+Remover “1 curitiba comedy champion”
+
+Remover “Curitibano. Sem filtro. Desde 2012”
+
+trocar “Mateus Caniceiro subiu ao palco pela primeira vez em setembro de 2012 e nunca mais desceu. Vencedor da Copa de Novos Comediantes do Curitiba Comedy Club em 2013, acumulou mais de 800 shows em bares, teatros e eventos corporativos — sempre com humor ácido, histórias reais e absolutamente zero filtro.
+Do palco do Curitiba Comedy Club à abertura de shows de Danilo Gentili e Whindersson Nunes, Mateus construiu uma carreira de mais de 12 anos fazendo Curitiba rir.” por “Mateus Caniceiro escreve piadas desde criança e subiu ao palco pela primeira vez em setembro de 2012. Vencedor da Copa de Novos Comediantes do Curitiba Comedy Club em 2013, já fez mais de 800 shows entre bares, teatros e eventos corporativos — sempre misturando histórias reais com piadas ácidas e humor provocativo.”
+Trocar “venha rir sem culpa” por “venha dar risada comigo.”
+Na aba de próximos shows existem dois containers, um chamado Ato Falho e outro chamado Comédia Radioativa 2025”. Remova os dois e crie um único botão vermelho escrito “COMPRAR INGRESSOS” que leve para o link https://linktr.ee/mateuscaniceiro em uma nova aba.
+Troque “spoiler: você vai rir.” por “Apresentações nas principais casas de comédia do Brasil.”
+Deixe maior a palavra ‘conteúdo’ que está escrita em vermelho. 
+Remova “assista e julgue”
+Troque o link do primeiro vídeo que tem lá desse “https://www.youtube.com/watch?v=vgFCJx8LSqg” para “https://youtu.be/xeaXyHEsaHs” 
+Troque o link do segundo vídeo que tem lá desse “https://www.youtube.com/watch?v=p5K289CVZrg’ para “https://youtu.be/a0taTvpUHaA”
+trocar “exceto depois de show. Aí pode demorar mais.” para  “exceto em dia de show, aí demora só um pouquinho mais.”
+trocar “Shows corporativos, festas, eventos privados e muito mais. Entre em contato e garanta uma noite que ninguém vai esquecer — pelo menos não por falta de tentativa. “ por Shows corporativos, em bares e teatros. Entre em contato e torne seu evento único!” 
+Trocar “Confraternizações, lançamentos, convenções de vendas — humor que conecta equipes e garante que todo mundo lembre do evento. “ por “Stand Up na sua confraternização ou evento corporativo. Entre em contato para mais informações.” 
+
+Onde está “já dividiu palco com” e uma lista de comediantes abaixo, incluir mais um na lista, Raphael Ghanem.
+
++  Inserir estrategicamente no SEO do back da pagina palavras que façam o site aparecer para quem pesquisar por:
+
+show corporativo
+comédia corporativo
+comediante curitiba
+comediante curitibano
+comediante em curitiba
+humorista em curitiba
+humorista curitibano
+comediante de curitiba
+humorista de curitiba
+show de comédia em evento
+show de comédia em empresa
+show de comédia para evento
+show de comédia para empresa
+show de comédia para equipe
+stand up corporativo
+stand up para empresa
+stand up para empresas
+
