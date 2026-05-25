@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mateuscaniceiro.com.br"),
   title: "Mateus Caniceiro — Comediante em Curitiba | Stand Up Corporativo",
   description:
     "Mateus Caniceiro: comediante curitibano com +800 shows em bares, teatros e eventos corporativos. Stand up para empresa, show corporativo, humorista para evento em Curitiba e em todo o Brasil.",

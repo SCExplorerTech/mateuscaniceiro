@@ -2,9 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
-import Shows from "@/components/Shows";
 import Videos from "@/components/Videos";
-import Gallery from "@/components/Gallery";
 import CorporateCTA from "@/components/CorporateCTA";
 import SocialStrip from "@/components/SocialStrip";
 import Contact from "@/components/Contact";
@@ -21,10 +19,8 @@ export default function Home() {
       <Hero />
       <Stats />
       <FadeIn><About /></FadeIn>
-      <FadeIn delay={100}><Shows /></FadeIn>
-      <FadeIn><Videos /></FadeIn>
-      <FadeIn><Gallery /></FadeIn>
       <FadeIn><CorporateCTA /></FadeIn>
+      <FadeIn><Videos /></FadeIn>
       <FadeIn><SocialStrip /></FadeIn>
       <FadeIn><Contact /></FadeIn>
       <Footer />

@@ -15,17 +15,17 @@ export default function Videos() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {videos.map((v) => (
-            <div key={v.id} className="group">
-              <div className="relative rounded-2xl overflow-hidden border border-white/5 group-hover:border-red-600/40 transition-all duration-300">
-                <iframe
-                  src={`https://www.youtube.com/embed/${v.id}`}
-                  title={v.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full aspect-video"
-                />
-              </div>
-              <p className="mt-3 text-white/70 text-sm font-medium text-center">{v.title}</p>
+            <div
+              key={v.id}
+              className="group relative rounded-2xl overflow-hidden border border-white/5 hover:border-red-600/40 transition-all duration-300"
+            >
+              <iframe
+                src={`https://www.youtube.com/embed/${v.id}`}
+                title={v.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full aspect-video"
+              />
             </div>
           ))}
         </div>

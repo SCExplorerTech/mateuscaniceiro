@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-white/20 text-xs text-center">
-          © {new Date().getFullYear()} Mateus Caniceiro. Todos os direitos reservados.
+          © {new Date().getFullYear()} Mateus Caniceiro. Todos os direitos reservados. Desenvolvido por <a href="https://www.explorertech.com.br" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/70 transition-colors">ExplorerTech</a>.
         </p>
       </div>
     </footer>

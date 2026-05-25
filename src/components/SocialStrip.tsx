@@ -43,7 +43,7 @@ export default function SocialStrip() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {socials.map((s) => (
             <a
               key={s.name}

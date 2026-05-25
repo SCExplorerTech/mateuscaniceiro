@@ -12,7 +12,7 @@ export default function Contact() {
           <span className="text-red-600">evento?</span>
         </h2>
         <p className="mt-6 text-white/50 leading-relaxed max-w-xl mx-auto">
-          Shows corporativos, em bares e teatros. Entre em contato e torne seu evento único!
+          Shows corporativos, em bares e teatros.<br />Entre em contato e torne seu evento único!
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">

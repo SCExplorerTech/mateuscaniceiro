@@ -87,7 +87,7 @@ export default function Image() {
             marginTop: "36px",
           }}
         >
-          Humor ácido. Histórias reais. Zero filtro.
+          Show de Stand Up em Evento Corporativo, Bares e Teatros.
         </div>
 
         {/* Stats */}
@@ -102,7 +102,7 @@ export default function Image() {
         >
           <span>+800 shows</span>
           <span>·</span>
-          <span>+12 anos de carreira</span>
+          <span>+14 anos de carreira</span>
           <span>·</span>
           <span>mateuscaniceiro.com.br</span>
         </div>

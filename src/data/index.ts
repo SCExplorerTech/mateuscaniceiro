@@ -33,14 +33,8 @@ export const famousWith = [
 ];
 
 export const videos = [
-  {
-    id: "xeaXyHEsaHs",
-    title: "Humor Negro Sem Filtro",
-  },
-  {
-    id: "a0taTvpUHaA",
-    title: "Eu Pareço o Mr Bean",
-  },
+  { id: "xeaXyHEsaHs", title: "Humor Negro Sem Filtro" },
+  { id: "a0taTvpUHaA", title: "Eu Pareço o Mr Bean" },
 ];
 
 export const galleryImages = [
@@ -56,5 +50,4 @@ export const socials = [
   { name: "Instagram", url: "https://www.instagram.com/mateuscaniceiro/", icon: "instagram" },
   { name: "YouTube", url: "https://www.youtube.com/@mateuscaniceiro", icon: "youtube" },
   { name: "TikTok", url: "https://www.tiktok.com/@mateuscani", icon: "tiktok" },
-  { name: "Twitter/X", url: "https://x.com/MateusCaniceiro", icon: "twitter" },
 ];

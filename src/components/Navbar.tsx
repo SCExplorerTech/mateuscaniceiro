@@ -5,9 +5,8 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { label: "Início", href: "#hero" },
-  { label: "Shows", href: "#shows" },
+  { label: "Shows", href: "https://linktr.ee/mateuscaniceiro", external: true },
   { label: "Vídeos", href: "#videos" },
-  { label: "Galeria", href: "#galeria" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -38,6 +37,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
+              {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-white/70 hover:text-red-500 text-sm font-medium uppercase tracking-wider transition-colors"
             >
               {l.label}
@@ -62,6 +62,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
+              {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-white/80 hover:text-red-500 text-sm font-medium uppercase tracking-wider transition-colors"
               onClick={() => setMenuOpen(false)}
             >
