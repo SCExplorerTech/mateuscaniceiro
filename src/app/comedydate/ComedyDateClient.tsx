@@ -291,47 +291,85 @@ export default function ComedyDateClient() {
       {/* ─────────────── CLIMA DO EVENTO ─────────────── */}
       <section className="py-20 px-4" style={{ background: "#8b0000" }}>
         <FadeIn>
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-black text-white">
                 ❤️ Clima do evento ❤️
               </h2>
             </div>
 
-            <div className="relative">
-              {/* Foto principal — 1 por vez em todos os tamanhos */}
-              <div
-                className="relative w-full rounded-2xl overflow-hidden"
-                style={{
-                  aspectRatio: "4/3",
-                  boxShadow: "0 0 50px rgba(220,38,38,0.4)",
-                }}
+            <div className="relative px-10">
+              {/* Seta esquerda */}
+              <button
+                onClick={prev}
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-colors"
+                aria-label="Foto anterior"
               >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+
+              {/* Mobile: 1 foto */}
+              <div className="md:hidden relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src={GALLERY_PHOTOS[current]}
                   alt={`Foto do evento ${current + 1}`}
                   fill
                   className="object-cover transition-opacity duration-300"
-                  sizes="(max-width: 768px) 100vw, 80vw"
+                  sizes="100vw"
                 />
               </div>
 
-              {/* Seta esquerda */}
-              <button
-                onClick={prev}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 bg-black/60 rounded-full flex items-center justify-center text-white hover:bg-black/80 transition-colors"
-                aria-label="Foto anterior"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
+              {/* Desktop: 3 fotos — prev (dim) | current (destaque) | next (dim) */}
+              <div className="hidden md:grid grid-cols-3 gap-3 items-center">
+                <button
+                  onClick={prev}
+                  className="relative aspect-[4/3] rounded-xl overflow-hidden w-full opacity-40 hover:opacity-60 transition-opacity duration-300"
+                  aria-label="Foto anterior"
+                >
+                  <Image
+                    src={GALLERY_PHOTOS[prevIndex]}
+                    alt={`Foto do evento ${prevIndex + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="25vw"
+                  />
+                </button>
+
+                <div
+                  className="relative aspect-[4/3] rounded-2xl overflow-hidden"
+                  style={{ boxShadow: "0 0 30px rgba(220,38,38,0.5)" }}
+                >
+                  <Image
+                    src={GALLERY_PHOTOS[current]}
+                    alt={`Foto do evento ${current + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="33vw"
+                  />
+                </div>
+
+                <button
+                  onClick={next}
+                  className="relative aspect-[4/3] rounded-xl overflow-hidden w-full opacity-40 hover:opacity-60 transition-opacity duration-300"
+                  aria-label="Próxima foto"
+                >
+                  <Image
+                    src={GALLERY_PHOTOS[nextIndex]}
+                    alt={`Foto do evento ${nextIndex + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="25vw"
+                  />
+                </button>
+              </div>
 
               {/* Seta direita */}
               <button
                 onClick={next}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 bg-black/60 rounded-full flex items-center justify-center text-white hover:bg-black/80 transition-colors"
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-colors"
                 aria-label="Próxima foto"
               >
-                <ChevronRight className="w-6 h-6" />
+                <ChevronRight className="w-5 h-5" />
               </button>
             </div>
 
