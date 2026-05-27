@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import {
@@ -15,6 +15,8 @@ import {
   ChevronRight,
   Camera,
   Hash,
+  Volume2,
+  VolumeX,
 } from "lucide-react";
 
 const GALLERY_PHOTOS = [
@@ -73,6 +75,15 @@ const CRIMSON_GRADIENT =
 export default function ComedyDateClient() {
   const [current, setCurrent] = useState<number>(0);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [muted, setMuted] = useState<boolean>(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleMute = useCallback(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setMuted(videoRef.current.muted);
+    }
+  }, []);
 
   const prev = useCallback(() => {
     setCurrent((c) => (c - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length);
@@ -86,7 +97,26 @@ export default function ComedyDateClient() {
   const nextIndex = (current + 1) % GALLERY_PHOTOS.length;
 
   return (
-    <main className="overflow-x-hidden">
+    <>
+      {/* ─────────────── NAVBAR ─────────────── */}
+      <nav
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3"
+        style={{ background: "rgba(30,0,0,0.85)", backdropFilter: "blur(10px)" }}
+      >
+        <div className="font-black text-lg leading-none">
+          <span className="italic text-white">Comedy</span>
+          <span className="text-red-400 ml-1">Date</span>
+          <Heart className="inline-block w-4 h-4 text-red-400 fill-red-400 ml-1 mb-0.5" />
+        </div>
+        <a
+          href="#formulario"
+          className="bg-[#b30000] border border-white/30 text-white font-bold text-xs uppercase tracking-wider px-4 py-2 rounded-full hover:bg-[#d60000] transition-colors"
+        >
+          Lista VIP ❤️
+        </a>
+      </nav>
+
+    <main className="overflow-x-hidden pt-12">
 
       {/* ─────────────── HERO ─────────────── */}
       <section
@@ -111,22 +141,35 @@ export default function ComedyDateClient() {
               style={{ animation: "fadeInUp 0.7s ease both 0.1s" }}
               className="flex justify-center"
             >
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/comedydate/mateuscapa.png"
-                className="rounded-2xl w-full object-cover"
-                style={{
-                  maxWidth: "300px",
-                  maxHeight: "560px",
-                  boxShadow:
-                    "0 0 60px rgba(220,38,38,0.45), 0 25px 50px rgba(0,0,0,0.5)",
-                }}
-              >
-                <source src="/comedydate/video.mp4" type="video/mp4" />
-              </video>
+              <div className="relative">
+                <video
+                  ref={videoRef}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="/comedydate/mateuscapa.png"
+                  className="rounded-2xl w-full object-cover"
+                  style={{
+                    maxWidth: "300px",
+                    maxHeight: "560px",
+                    boxShadow:
+                      "0 0 60px rgba(220,38,38,0.45), 0 25px 50px rgba(0,0,0,0.5)",
+                  }}
+                >
+                  <source src="/comedydate/video.mp4" type="video/mp4" />
+                </video>
+                <button
+                  onClick={toggleMute}
+                  aria-label={muted ? "Ativar som" : "Desativar som"}
+                  className="absolute bottom-3 right-3 w-9 h-9 bg-black/60 rounded-full flex items-center justify-center text-white hover:bg-black/80 transition-colors"
+                >
+                  {muted
+                    ? <VolumeX className="w-4 h-4" />
+                    : <Volume2 className="w-4 h-4" />
+                  }
+                </button>
+              </div>
             </div>
 
             {/* Conteúdo textual */}
@@ -473,5 +516,6 @@ export default function ComedyDateClient() {
       </footer>
 
     </main>
+    </>
   );
 }
