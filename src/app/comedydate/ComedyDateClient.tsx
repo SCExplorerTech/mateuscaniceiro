@@ -20,14 +20,14 @@ import {
 } from "lucide-react";
 
 const GALLERY_PHOTOS = [
-  "/comedydate/fotos/foto-01.jpeg",
-  "/comedydate/fotos/foto-02.jpeg",
-  "/comedydate/fotos/foto-03.jpeg",
-  "/comedydate/fotos/foto-04.jpeg",
-  "/comedydate/fotos/foto-05.jpeg",
-  "/comedydate/fotos/foto-06.jpeg",
-  "/comedydate/fotos/foto-07.jpeg",
-  "/comedydate/fotos/foto-08.jpeg",
+  { src: "/comedydate/fotos/foto-01.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-02.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-03.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-04.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-05.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-06.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-07.jpeg", w: 1280, h: 1600 },
+  { src: "/comedydate/fotos/foto-08.jpeg", w: 1600, h: 1290 },
 ];
 
 const STEPS = [
@@ -291,7 +291,7 @@ export default function ComedyDateClient() {
       {/* ─────────────── CLIMA DO EVENTO ─────────────── */}
       <section className="py-20 px-4" style={{ background: "#8b0000" }}>
         <FadeIn>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-black text-white">
                 ❤️ Clima do evento ❤️
@@ -309,55 +309,59 @@ export default function ComedyDateClient() {
               </button>
 
               {/* Mobile: 1 foto */}
-              <div className="md:hidden relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="md:hidden rounded-2xl overflow-hidden">
                 <Image
-                  src={GALLERY_PHOTOS[current]}
+                  src={GALLERY_PHOTOS[current].src}
                   alt={`Foto do evento ${current + 1}`}
-                  fill
-                  className="object-cover transition-opacity duration-300"
+                  width={GALLERY_PHOTOS[current].w}
+                  height={GALLERY_PHOTOS[current].h}
+                  className="w-full h-auto transition-opacity duration-300"
                   sizes="100vw"
                 />
               </div>
 
               {/* Desktop: 3 fotos — prev (dim) | current (destaque) | next (dim) */}
-              <div className="hidden md:grid grid-cols-3 gap-3 items-center">
+              <div className="hidden md:grid grid-cols-[1fr_3fr_1fr] gap-3 items-center">
                 <button
                   onClick={prev}
-                  className="relative aspect-[4/3] rounded-xl overflow-hidden w-full opacity-40 hover:opacity-60 transition-opacity duration-300"
+                  className="rounded-xl overflow-hidden w-full opacity-40 hover:opacity-60 transition-opacity duration-300"
                   aria-label="Foto anterior"
                 >
                   <Image
-                    src={GALLERY_PHOTOS[prevIndex]}
+                    src={GALLERY_PHOTOS[prevIndex].src}
                     alt={`Foto do evento ${prevIndex + 1}`}
-                    fill
-                    className="object-cover"
+                    width={GALLERY_PHOTOS[prevIndex].w}
+                    height={GALLERY_PHOTOS[prevIndex].h}
+                    className="w-full h-auto"
                     sizes="25vw"
                   />
                 </button>
 
                 <div
-                  className="relative aspect-[4/3] rounded-2xl overflow-hidden"
+                  className="rounded-2xl overflow-hidden"
                   style={{ boxShadow: "0 0 30px rgba(220,38,38,0.5)" }}
                 >
                   <Image
-                    src={GALLERY_PHOTOS[current]}
+                    src={GALLERY_PHOTOS[current].src}
                     alt={`Foto do evento ${current + 1}`}
-                    fill
-                    className="object-cover"
+                    width={GALLERY_PHOTOS[current].w}
+                    height={GALLERY_PHOTOS[current].h}
+                    className="w-full h-auto"
                     sizes="33vw"
                   />
                 </div>
 
                 <button
                   onClick={next}
-                  className="relative aspect-[4/3] rounded-xl overflow-hidden w-full opacity-40 hover:opacity-60 transition-opacity duration-300"
+                  className="rounded-xl overflow-hidden w-full opacity-40 hover:opacity-60 transition-opacity duration-300"
                   aria-label="Próxima foto"
                 >
                   <Image
-                    src={GALLERY_PHOTOS[nextIndex]}
+                    src={GALLERY_PHOTOS[nextIndex].src}
                     alt={`Foto do evento ${nextIndex + 1}`}
-                    fill
-                    className="object-cover"
+                    width={GALLERY_PHOTOS[nextIndex].w}
+                    height={GALLERY_PHOTOS[nextIndex].h}
+                    className="w-full h-auto"
                     sizes="25vw"
                   />
                 </button>
