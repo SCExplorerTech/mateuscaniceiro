@@ -27,7 +27,6 @@ const GALLERY_PHOTOS = [
   { src: "/comedydate/fotos/foto-05.jpeg", w: 1280, h: 1600 },
   { src: "/comedydate/fotos/foto-06.jpeg", w: 1280, h: 1600 },
   { src: "/comedydate/fotos/foto-07.jpeg", w: 1280, h: 1600 },
-  { src: "/comedydate/fotos/foto-08.jpeg", w: 1600, h: 1290 },
 ];
 
 const STEPS = [
