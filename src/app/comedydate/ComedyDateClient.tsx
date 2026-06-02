@@ -109,7 +109,7 @@ export default function ComedyDateClient() {
           rel="noopener noreferrer"
           className="bg-[#b30000] border border-white/30 text-white font-bold text-xs uppercase tracking-wider px-4 py-2 rounded-full hover:bg-[#d60000] transition-colors"
         >
-          Quero reservar minha vaga! ❤️
+          Fazer minha reserva ❤️
         </a>
       </nav>
 
@@ -125,7 +125,7 @@ export default function ComedyDateClient() {
             {/* Badge topo */}
             <div
               style={{ animation: "fadeInUp 0.5s ease both 0s" }}
-              className="border border-white/40 text-white/75 text-xs font-bold uppercase tracking-widest rounded-full px-5 py-2"
+              className="border border-white/40 text-white/75 text-[10px] md:text-xs font-bold uppercase tracking-normal md:tracking-widest rounded-full px-3 md:px-5 py-2"
             >
               ❤️ Especial Dia dos Namorados Para Solteiros
             </div>
@@ -210,7 +210,7 @@ export default function ComedyDateClient() {
                   style={{ animation: "fadeInUp 0.7s ease both 0.35s" }}
                   className="text-base md:text-xl font-bold text-white uppercase tracking-wide"
                 >
-                  Um show para conhecer pessoas novas
+                  Um show para conhecer<br className="md:hidden" /> pessoas novas
                 </p>
 
                 {/* Pills de features */}
@@ -290,7 +290,7 @@ export default function ComedyDateClient() {
               className="inline-block bg-[#b30000] border-2 border-[#b30000] text-white font-black text-lg uppercase px-10 py-5 rounded-full hover:scale-105 hover:bg-[#d60000] transition-all duration-200"
               style={{ boxShadow: "0 0 32px rgba(179,0,0,0.4)" }}
             >
-              Quero reservar meu lugar! ❤️
+              Quero reservar<br />meu lugar! ❤️
             </a>
           </div>
         </section>
@@ -387,7 +387,7 @@ export default function ComedyDateClient() {
               className="inline-block bg-[#b30000] border-2 border-white text-white font-black text-lg uppercase px-10 py-5 rounded-full hover:scale-105 hover:bg-[#d60000] transition-all duration-200"
               style={{ boxShadow: "0 0 32px rgba(220,38,38,0.65)" }}
             >
-              Quero reservar meu lugar! ❤️
+              Quero reservar<br />meu lugar! ❤️
             </a>
           </div>
         </section>
