@@ -1,0 +1,27 @@
+Substituir o botão da barra fixa superior de "LISTA VIP" para "Quero reservar minha vaga! ❤️" e o destino será o link: https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593
+
+Substituir o botão da primeira sessão hero do site de "ENTRAR NA LISTA VIP" para "Quero reservar minha vaga! ❤️" e o destino será o link: https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593
+
+Substituir o botão da primeira sessão hero do site "❤️ Especial Dia dos Namorados" para "❤️ Especial Dia dos Namorados Para Solteiros"
+
+Substituir vídeo da primeira sessão hero do site por esse vídeo aqui: https://drive.google.com/file/d/1mQCcqsWKVF1OSdzKqByu1d2mhWE1o30M/view?usp=sharing
+
+Na sessão "como funciona", remover todos os itens e o titulo da sessão e colocar um marcador crescendo numeral de 0 a "40% dos lugares já reservados!"
+
+remover a sessão "clima do evento"
+
+criar uma sessão logo abaixo do contador de % de lugares reservados com um botão escrito "Quero reservar meu lugar! ❤️" com link para
+https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593
+
+Na sessão de perguntas frequentes, atualize a resposta da pergunta "Posso ir sozinho?" para "Sim! A maioria das pessoas vai sozinha. Porém você pode chamar alguns amigos pra curtir o show que na hora do speed dating todo mundo ficará em mesa separada pra poder conversar de boa."
+
+Na sessão de perguntas frequentes, atualize a resposta da pergunta "vai ter diferença de idade?" para "O público costuma ser adulto e variado, predominantemente entre 25 e 40 anos. Porém não existe uma limitação de idade, todos são bem-vindos!"
+
+Na sessão de perguntas frequentes, atualize a resposta da pergunta "É constrangedor?" para "Não. O foco é diversão, conversar e conhecer pessoas novas de forma leve."
+
+Na sessão "Entre para a lista VIP" troque "Receba primeiro as informações, abertura das vendas e novidades do Comedy Date." para "Não conseguiu reservar seu lugar e/ou tem interesse nas próximas edições? Receba primeiro as informações, abertura das vendas e novidades do Comedy Date."
+
+criar uma sessão logo abaixo do formulário com um botão escrito "Quero reservar meu lugar! ❤️" com link para
+https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593
+
+no rodapé da página, torne "@MateusCaniceiro" clicável para https://www.instagram.com/mateuscaniceiro/
