@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 const SYMPLA_URL =
-  "https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593";
+  "https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593?utm_source=site";
 
 const FEATURES = [
   { Icon: Mic, label: "STAND-UP COMEDY" },
