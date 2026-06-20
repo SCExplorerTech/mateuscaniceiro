@@ -14,9 +14,6 @@ import {
   VolumeX,
 } from "lucide-react";
 
-const SYMPLA_URL =
-  "https://www.sympla.com.br/evento/comedy-date---speed-dating-encontros-rapidos-dia-dos-namorados--stand-up-comedy-curitiba-1206/3447593?utm_source=site";
-
 const FEATURES = [
   { Icon: Mic, label: "STAND-UP COMEDY" },
   { Icon: Heart, label: "SPEED DATING" },
@@ -72,7 +69,7 @@ export default function ComedyDateClient() {
       ([entry]) => {
         if (entry.isIntersecting) {
           observer.disconnect();
-          const target = 40;
+          const target = 1000;
           const duration = 2000;
           const start = performance.now();
           const frame = (now: number) => {
@@ -104,12 +101,10 @@ export default function ComedyDateClient() {
           <Heart className="inline-block w-4 h-4 text-red-400 fill-red-400 ml-1 mb-0.5" />
         </div>
         <a
-          href={SYMPLA_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#formulario"
           className="bg-[#b30000] border border-white/30 text-white font-bold text-xs uppercase tracking-wider px-4 py-2 rounded-full hover:bg-[#d60000] transition-colors"
         >
-          Fazer minha reserva ❤️
+          Quero participar! ❤️
         </a>
       </nav>
 
@@ -127,7 +122,7 @@ export default function ComedyDateClient() {
               style={{ animation: "fadeInUp 0.5s ease both 0s" }}
               className="border border-white/40 text-white/75 text-[10px] md:text-xs font-bold uppercase tracking-normal md:tracking-widest rounded-full px-3 md:px-5 py-2"
             >
-              ❤️ Especial Dia dos Namorados Para Solteiros
+              ❤️ Próxima edição em breve!
             </div>
 
             {/* Grid: vídeo | texto */}
@@ -235,13 +230,11 @@ export default function ComedyDateClient() {
                   className="flex flex-col items-center md:items-start gap-3"
                 >
                   <a
-                    href={SYMPLA_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#formulario"
                     className="inline-block bg-[#b30000] border-2 border-white text-white font-black text-base md:text-lg uppercase px-8 py-4 rounded-full hover:scale-105 hover:bg-[#d60000] transition-all duration-200"
                     style={{ boxShadow: "0 0 32px rgba(220,38,38,0.65)" }}
                   >
-                    Quero reservar minha vaga! ❤️
+                    Quero participar! ❤️
                   </a>
                   <span className="text-yellow-300 text-xs font-bold uppercase tracking-widest">
                     Vagas limitadas por gênero!
@@ -261,21 +254,11 @@ export default function ComedyDateClient() {
                 className="font-black leading-none"
                 style={{ color: "#b30000", fontSize: "clamp(5rem, 20vw, 9rem)" }}
               >
-                {count}%
+                +{count.toLocaleString("pt-BR")}
               </div>
               <p className="text-gray-800 text-xl md:text-2xl font-bold mt-2">
-                dos lugares já reservados!
+                Já proporcionamos mais de 1000 encontros diferentes!
               </p>
-              <div className="w-full bg-gray-200 rounded-full h-4 mt-6 overflow-hidden">
-                <div
-                  className="h-4 rounded-full transition-all duration-100"
-                  style={{
-                    width: `${count}%`,
-                    background: "linear-gradient(90deg, #b30000, #d60000)",
-                    boxShadow: "0 0 10px rgba(179,0,0,0.5)",
-                  }}
-                />
-              </div>
             </div>
           </FadeIn>
         </section>
@@ -284,13 +267,11 @@ export default function ComedyDateClient() {
         <section className="bg-white pb-20 px-4">
           <div className="max-w-xl mx-auto text-center">
             <a
-              href={SYMPLA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#formulario"
               className="inline-block bg-[#b30000] border-2 border-[#b30000] text-white font-black text-lg uppercase px-10 py-5 rounded-full hover:scale-105 hover:bg-[#d60000] transition-all duration-200"
               style={{ boxShadow: "0 0 32px rgba(179,0,0,0.4)" }}
             >
-              Quero reservar<br />meu lugar! ❤️
+              Quero participar! ❤️
             </a>
           </div>
         </section>
@@ -381,13 +362,11 @@ export default function ComedyDateClient() {
         <section style={{ background: "#3d0000" }} className="py-14 px-4">
           <div className="max-w-xl mx-auto text-center">
             <a
-              href={SYMPLA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#formulario"
               className="inline-block bg-[#b30000] border-2 border-white text-white font-black text-lg uppercase px-10 py-5 rounded-full hover:scale-105 hover:bg-[#d60000] transition-all duration-200"
               style={{ boxShadow: "0 0 32px rgba(220,38,38,0.65)" }}
             >
-              Quero reservar<br />meu lugar! ❤️
+              Quero participar! ❤️
             </a>
           </div>
         </section>
