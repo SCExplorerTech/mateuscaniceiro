@@ -40,4 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 files/video.mp4
+files/video_comedydate.mp4
+files/video_vendas.mp4
 .playwright-mcp/
