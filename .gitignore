@@ -43,3 +43,6 @@ files/video.mp4
 files/video_comedydate.mp4
 files/video_vendas.mp4
 .playwright-mcp/
+.config/
+.npm/
+videos/
