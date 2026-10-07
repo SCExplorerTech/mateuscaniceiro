@@ -341,6 +341,21 @@ export default function ComedyDateClient() {
               </p>
             </div>
 
+            {/* Embutido, o Google pede login/cookies a quem não está logado no Google (Safari, Firefox,
+                aba anônima) e mostra uma tela de "Fazer login" no lugar do formulário. O link direto
+                abre para qualquer pessoa, sem login. */}
+            <p className="max-w-2xl mx-auto text-center text-white/80 text-sm mb-4">
+              O formulário não apareceu?{" "}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdGgAC0UwXxr4DsKJqefY89bcAHU7f0CZ1G8kFP6LwC0Y_SYQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-300 font-semibold underline underline-offset-2 hover:text-yellow-200"
+              >
+                Abra o formulário aqui ↗
+              </a>
+            </p>
+
             <div
               className="max-w-2xl mx-auto bg-white rounded-2xl overflow-hidden"
               style={{ boxShadow: "0 25px 60px rgba(0,0,0,0.45)" }}
