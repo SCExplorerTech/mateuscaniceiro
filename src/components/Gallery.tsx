@@ -1,57 +1,19 @@
 import Image from "next/image";
 import { galleryImages } from "@/data";
 
-interface InstagramPost {
-  id: string;
-  media_type: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
-  media_url: string;
-  thumbnail_url?: string;
-  permalink: string;
-  like_count: number;
-}
-
 interface GalleryItem {
   src: string;
   alt: string;
   href: string;
 }
 
-async function getInstagramPosts(): Promise<GalleryItem[]> {
-  const token = process.env.INSTAGRAM_ACCESS_TOKEN;
-  if (!token) return [];
-
-  try {
-    const res = await fetch(
-      `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink,like_count&limit=50&access_token=${token}`,
-      { next: { revalidate: 3600 } }
-    );
-
-    if (!res.ok) return [];
-
-    const data = await res.json();
-    const posts: InstagramPost[] = data.data ?? [];
-
-    return posts
-      .filter((p) => p.media_type !== "VIDEO" || p.thumbnail_url)
-      .sort((a, b) => b.like_count - a.like_count)
-      .slice(0, 6)
-      .map((p) => ({
-        src: p.media_type === "VIDEO" ? p.thumbnail_url! : p.media_url,
-        alt: "Mateus Caniceiro",
-        href: p.permalink,
-      }));
-  } catch {
-    return [];
-  }
-}
-
-export default async function Gallery() {
-  const instagramPosts = await getInstagramPosts();
-
-  const images: GalleryItem[] =
-    instagramPosts.length > 0
-      ? instagramPosts
-      : galleryImages.map((img) => ({ ...img, href: "https://www.instagram.com/mateuscaniceiro/" }));
+// Fotos fixas de src/data. (Até 06/out/2026 havia uma busca dinâmica no Instagram via
+// INSTAGRAM_ACCESS_TOKEN, nunca configurada — removida na conversão para site estático.)
+export default function Gallery() {
+  const images: GalleryItem[] = galleryImages.map((img) => ({
+    ...img,
+    href: "https://www.instagram.com/mateuscaniceiro/",
+  }));
 
   return (
     <section id="galeria" className="bg-zinc-950 py-24">
